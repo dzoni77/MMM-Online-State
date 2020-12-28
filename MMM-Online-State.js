@@ -13,7 +13,7 @@ Module.register("MMM-Online-State", {
         window.addEventListener('offline', () => this.updateDom());
     },
     getStyles: function () {
-        return ["font-awesome.css"];
+        return ["font-awesome.css", "MMM-Online-State.css"];
     },
     getDom: function () {
         const state = window.navigator.onLine;
