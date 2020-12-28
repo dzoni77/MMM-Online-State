@@ -18,6 +18,7 @@ Module.register("MMM-Online-State", {
     getDom: function () {
         const state = window.navigator.onLine;
         let wrapper = document.createElement("div");
+        wrapper.id = "onlinestate-wrapper";
         if (this.config.displaySymbol) {
             let symbolWrapper = document.createElement("div");
             if (this.config.colored) {
